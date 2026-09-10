@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.local
+
+# contracts
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
+
+# backend/dashboard (added in later phases)
+backend/dist/
+dashboard/build/
+dashboard/dist/

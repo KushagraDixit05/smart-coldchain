@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: bkt-postgres
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: bkt
+      POSTGRES_PASSWORD: bkt_dev_password
+      POSTGRES_DB: bkt
+    volumes:
+      - bkt_pgdata:/var/lib/postgresql/data
+
+volumes:
+  bkt_pgdata:
