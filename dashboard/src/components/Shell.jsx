@@ -5,6 +5,7 @@ const NAV_ITEMS = [
   { to: "/", label: "Dashboard", end: true },
   { to: "/shipments", label: "Shipments" },
   { to: "/monitoring", label: "Monitoring" },
+  { to: "/esp32", label: "ESP32 Live" },
   { to: "/blockchain", label: "Blockchain" },
 ];
 

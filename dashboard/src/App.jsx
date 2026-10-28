@@ -9,6 +9,7 @@ import ShipmentDetail from "./pages/ShipmentDetail";
 import NewShipment from "./pages/NewShipment";
 import Monitoring from "./pages/Monitoring";
 import Blockchain from "./pages/Blockchain";
+import ESP32Live from "./pages/ESP32Live";
 
 export default function App() {
   return (
@@ -61,6 +62,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Blockchain />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/esp32"
+            element={
+              <ProtectedRoute>
+                <ESP32Live />
               </ProtectedRoute>
             }
           />
